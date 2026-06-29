@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopZone — All Products</title>
+  <link rel="stylesheet" href="STYLE.CSS" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">🛍️ ShopZone</div>
+    <div class="nav-right">
+      <input type="text" id="searchInput" class="search-bar" placeholder="Search products…" />
+      <a href="cart.html" class="cart-btn">
+        🛒 Cart <span class="cart-count" id="cartCount">0</span>
+      </a>
+    </div>
+  </nav>
+
+  
+  
+
+  <!-- FILTERS -->
+  <div class="filters-bar">
+    <select id="categoryFilter" class="filter-select">
+      <option value="">All Categories</option>
+    </select>
+    <select id="sortFilter" class="filter-select">
+      <option value="">Sort By</option>
+      <option value="price-asc">Price: Low → High</option>
+      <option value="price-desc">Price: High → Low</option>
+      <option value="rating">Top Rated</option>
+    </select>
+    <span id="productCount" class="product-count"></span>
+  </div>
+
+  <!-- PRODUCT GRID -->
+  <main id="productGrid" class="product-grid">
+    <div class="loader">Loading products…</div>
+  </main>
+
+  <script src="js/cart.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
